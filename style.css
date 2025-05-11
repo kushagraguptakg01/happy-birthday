@@ -1,0 +1,225 @@
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Assistant:wght@300;400;600&display=swap');
+
+/* --- General Body Styles --- */
+body {
+    color: #333; /* Dark grey text */
+    background-color: #f0e4f7; /* Light lavender background */
+    /* For a background image (place image in the same folder or use URL) */
+    /* background-image: url("your_background_image.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+}
+
+/* --- Main App Container (Streamlit specific) --- */
+/* This targets the main block where content is rendered */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+
+/* --- Headers --- */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* A more elegant font for headers */
+    color: #6a0dad; /* Purple for headers */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: #800080; /* Darker purple for sub-headers */
+    border-bottom: 2px solid #e6e6fa; /* Light lavender underline */
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+
+/* --- Text Input Field --- */
+div[data-testid="stTextInput"] input {
+    border: 2px solid #b19cd9; /* Softer purple border */
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+div[data-testid="stTextInput"] input:focus {
+    border-color: #6a0dad; /* Darker purple on focus */
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
+}
+
+
+/* --- Buttons --- */
+div[data-testid="stButton"] > button {
+    background-color: #9370db; /* Medium purple */
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px; /* More rounded buttons */
+    padding: 12px 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+div[data-testid="stButton"] > button:hover {
+    background-color: #800080; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+div[data-testid="stButton"] > button:active {
+    background-color: #6a0dad; /* Even darker on click */
+    transform: translateY(0px);
+}
+
+/* Primary button (if you use type="primary") specific styling */
+div[data-testid="stButton"] > button[kind="primary"] {
+    background-color: #ff69b4; /* Hot pink for primary action */
+}
+div[data-testid="stButton"] > button[kind="primary"]:hover {
+    background-color: #db4C9A;
+}
+
+
+/* --- Expander for Hints --- */
+div[data-testid="stExpander"] summary {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #6a0dad;
+}
+div[data-testid="stExpander"] {
+    border: 1px solid #e6e6fa;
+    border-radius: 10px;
+    background-color: #faf7fd; /* Very light lavender for expander background */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* --- Markdown & Text --- */
+.stMarkdown p, .stMarkdown li {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #4a4a4a; /* Slightly softer dark grey for paragraphs */
+}
+
+
+/* --- Success, Error, Info, Warning Boxes --- */
+div[data-testid="stAlert"] { /* General alert styling */
+    border-radius: 8px;
+    padding: 15px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.05em;
+}
+div[data-testid="stAlert"][kind="success"] {
+    background-color: #e6ffed; /* Light green for success */
+    border-left: 5px solid #34c759;
+    color: #207236;
+}
+div[data-testid="stAlert"][kind="error"] {
+    background-color: #ffe6e6; /* Light red for error */
+    border-left: 5px solid #ff3b30;
+    color: #99231e;
+}
+div[data-testid="stAlert"][kind="info"] {
+    background-color: #e0f3ff; /* Light blue for info */
+    border-left: 5px solid #007aff;
+    color: #004c99;
+}
+div[data-testid="stAlert"][kind="warning"] {
+    background-color: #fff8e1; /* Light yellow for warning */
+    border-left: 5px solid #ffcc00;
+    color: #8d6e00;
+}
+
+/* --- Image captions --- */
+[data-testid="stImage"]figcaption {
+    font-family: 'Assistant', sans-serif;
+    font-style: italic;
+    color: #777;
+    text-align: center;
+}
+
+/* Add more specific styles as needed! */
+
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Assistant:wght@300;400;600&display=swap');
+
+/* --- General Body Styles --- */
+body {
+    color: #333; /* Dark grey text */
+    background-color: #f0e4f7; /* Light lavender background */
+}
+
+/* --- Main App Container (Streamlit specific) --- */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* --- Headers --- */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6a0dad; /* Purple for headers */
+}
+h1 { text-align: center; margin-bottom: 1.5rem; }
+h2 { color: #800080; border-bottom: 2px solid #e6e6fa; padding-bottom: 0.5rem; margin-top: 1.5rem; }
+
+/* --- Text Input Field --- */
+div[data-testid="stTextInput"] input {
+    border: 2px solid #b19cd9; border-radius: 8px; padding: 10px 15px;
+    font-family: 'Assistant', sans-serif; font-size: 1.1em; transition: border-color 0.3s ease;
+}
+div[data-testid="stTextInput"] input:focus {
+    border-color: #6a0dad; box-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
+}
+
+/* --- Buttons --- */
+div[data-testid="stButton"] > button {
+    background-color: #9370db; color: white; font-family: 'Assistant', sans-serif;
+    font-weight: 600; font-size: 1.1em; border: none; border-radius: 25px;
+    padding: 12px 25px; transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+div[data-testid="stButton"] > button:hover { background-color: #800080; transform: translateY(-2px); }
+div[data-testid="stButton"] > button:active { background-color: #6a0dad; transform: translateY(0px); }
+div[data-testid="stButton"] > button[kind="primary"] { background-color: #ff69b4; }
+div[data-testid="stButton"] > button[kind="primary"]:hover { background-color: #db4C9A; }
+
+/* --- Expander for Hints --- */
+div[data-testid="stExpander"] summary { font-family: 'Assistant', sans-serif; font-weight: 600; font-size: 1.1em; color: #6a0dad; }
+div[data-testid="stExpander"] {
+    border: 1px solid #e6e6fa; border-radius: 10px; background-color: #faf7fd;
+    margin-top: 1rem; margin-bottom: 1rem;
+}
+
+/* --- Markdown & Text --- */
+.stMarkdown p, .stMarkdown li { font-family: 'Assistant', sans-serif; font-size: 1.1em; line-height: 1.7; color: #4a4a4a; }
+
+/* --- Success, Error, Info, Warning Boxes --- */
+div[data-testid="stAlert"] { border-radius: 8px; padding: 15px; font-family: 'Assistant', sans-serif; font-size: 1.05em; }
+div[data-testid="stAlert"][kind="success"] { background-color: #e6ffed; border-left: 5px solid #34c759; color: #207236; }
+div[data-testid="stAlert"][kind="error"] { background-color: #ffe6e6; border-left: 5px solid #ff3b30; color: #99231e; }
+div[data-testid="stAlert"][kind="info"] { background-color: #e0f3ff; border-left: 5px solid #007aff; color: #004c99; }
+div[data-testid="stAlert"][kind="warning"] { background-color: #fff8e1; border-left: 5px solid #ffcc00; color: #8d6e00; }
+
+/* --- Image captions --- */
+[data-testid="stImage"]figcaption { font-family: 'Assistant', sans-serif; font-style: italic; color: #777; text-align: center; }
