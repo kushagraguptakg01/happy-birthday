@@ -50,7 +50,7 @@ ALL_CLUES = [
     },
     {
         "id": 6,
-        "question": f"Even with all the action on the field, who was truly my favorite person to look at during that cricket match, {GIRLFRIEND_PET_NAME}? (Just her first name!)",
+        "question": f"Even with all the action on the field, who was truly my favorite person to look at during that cricket match, {GIRLFRIEND_PET_NAME}? (Just the first name!)",
         "answer": "divya", # ASSUMPTION: Girlfriend's actual first name. CHANGE THIS IF INCORRECT.
         "hint1": "She has the most captivating smile in the entire stadium... and my world!",
         "hint2": "The answer is the amazing person solving these riddles right now!",
